@@ -1,8 +1,25 @@
 body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   background-image: url(/src/component/images/background-foto.png);
 }
-.App {
+.app-wrapper {
   max-width: 80%;
   margin: 0 auto;
-  background-color: rgba(127, 255, 212, 0.09);
+  display: grid;
+  grid-template-areas:
+                      "h h"
+                      "n p";
+  grid-template-rows: 75px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+    
 }
+
+.nav {
+  grid-area: n;
+}
+
