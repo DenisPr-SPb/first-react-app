@@ -1,21 +1,2 @@
-.profile {
-    grid-area: p;
-    background-color: rgba(169, 169, 169, 0.4);
-}
 
-.profileWrapper {
-    padding: 20px;
-}
 
-.headImg {
-   
-}
-
-.headImg img {
-   width: 100%;
-}
-
-.avatar img {
-    max-width: 100px;
-    border-radius: 50%;
-}

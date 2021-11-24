@@ -1,0 +1,12 @@
+.headImg img {
+    width: 100%;
+}
+
+.avatar img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.description {
+    padding: 10px;
+}
