@@ -3,10 +3,17 @@ import style from './MyPosts.module.css';
 import Posts from './Post/Posts';
 
 const MyPosts = (props) => {
+
+
+
+  const postElement = props.state.posts.map ( (post) => {
+    return <Posts message={post.message} likesCount={post.likesCount}/>
+  })
+
   return (
     <div>
       <div className={style.posts}>
-        my posts
+        <h2>my posts</h2>
         <div>
           <div>
             <textarea></textarea>
@@ -16,8 +23,7 @@ const MyPosts = (props) => {
           </div>
         </div>
         
-        <Posts message='Hi, how are you' likeCount='15'/>
-        <Posts message='It is my new post' likeCount='20'/>
+        { postElement }
 
       </div>
     </div>

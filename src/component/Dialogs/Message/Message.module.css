@@ -1,0 +1,7 @@
+.message{ 
+    padding-top: 10px;
+}
+
+.message:first-child {
+    padding-top: 0;
+}

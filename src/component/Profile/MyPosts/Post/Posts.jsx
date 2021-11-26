@@ -2,8 +2,6 @@ import React from 'react';
 import style from './Posts.module.css';
 
 const Posts = (props) => {
-
-
   return (
           <div className={style.post}>
             <div>
@@ -12,7 +10,7 @@ const Posts = (props) => {
             {props.message}
 
             <div>
-              likes: {props.likeCount}
+              likes: {props.likesCount}
             </div>
 
           </div>

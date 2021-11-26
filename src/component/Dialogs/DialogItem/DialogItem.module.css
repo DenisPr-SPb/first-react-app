@@ -1,0 +1,8 @@
+
+.dialog { 
+    padding-top: 10px;
+}   
+
+.dialog:first-child {
+    padding-top: 0;
+}
