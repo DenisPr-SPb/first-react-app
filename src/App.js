@@ -16,12 +16,11 @@ import Settings from './component/Settings/Settings';
 
 const App = (props) => {
   return (
-    <BrowserRouter>
       <div className="app-wrapper">
         
         <Header />
 
-        <Navbar />
+        <Navbar state={props.state.sideBar}/>
 
         <div className='app-wrapper-content'>
           <Routes>
@@ -30,7 +29,7 @@ const App = (props) => {
             }/>
 
             <Route path='/profile' element={
-              <Profile state={props.state.profilePage} />
+              <Profile state={props.state.profilePage} addPost={ props.addPost }/>
             }/>
 
             <Route path='/news' element={<News />} />
@@ -42,7 +41,6 @@ const App = (props) => {
 
         
       </div>
-    </BrowserRouter>
   );
 }
 

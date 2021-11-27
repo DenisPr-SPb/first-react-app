@@ -7,12 +7,14 @@ const Posts = (props) => {
             <div>
               <img src="https://klike.net/uploads/posts/2020-04/1587719791_1.jpg" alt="" />
             </div>
-            {props.message}
 
-            <div>
-              likes: {props.likesCount}
+            <div className={style.postMessage}>
+              {props.message}
+
+              <div className={style.likes}>
+                likes: {props.likesCount}
+              </div>
             </div>
-
           </div>
 
   );

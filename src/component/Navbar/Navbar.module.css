@@ -25,4 +25,14 @@
     background-color: darkgray;
 }
 
-    
+.navFriends {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0px 20px 0px;
+}
+
+
+.friends {
+    display: flex;
+    justify-content: space-between;
+}    
