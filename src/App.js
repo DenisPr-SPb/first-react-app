@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Dialogs from './component/Dialogs/Dialogs';
 import Header from './component/Header/Header';
@@ -29,7 +28,9 @@ const App = (props) => {
             }/>
 
             <Route path='/profile' element={
-              <Profile state={props.state.profilePage} addPost={ props.addPost }/>
+              <Profile  profilePage={props.state.profilePage} 
+                        dispatch={ props.dispatch } 
+              />
             }/>
 
             <Route path='/news' element={<News />} />
