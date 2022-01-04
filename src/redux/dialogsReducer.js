@@ -1,7 +1,26 @@
 const ADD_MESSAGE = 'ADD-MESSAGE';
 const UPDATE_NEW_MESSAGE_BODY = 'UPADTE-NEW-MESSAGE-BODY';
 
-const dialogsReducer = (state, action) => {
+const initialState = {
+    messages: [
+        {id:'1' ,message:'Moi'},
+        {id:'2' ,message:'Kuka sina olet?'},
+        {id:'3' ,message:'Mina olen Denis'},
+        {id:'4' ,message:'New message'},
+    ],
+
+    newMessageBody:'',
+    
+    dialogs: [
+        {id:'1', name:'Denis'},
+        {id:'2', name:'Sveta'},
+        {id:'3', name:'Polya'},
+        {id:'4', name:'Dima'},
+    
+    ],
+}
+
+const dialogsReducer = (state = initialState, action) => {
     
     switch (action.type) {
 
